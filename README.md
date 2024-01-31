@@ -5,7 +5,7 @@
 ### BASE URL (TEMPORARY)
 
 ```json
-https://535f-179-185-162-200.ngrok-free.app/api
+https://rpg-content-cards-rest.vercel.app/api
 ```
 
 ### HEADER
