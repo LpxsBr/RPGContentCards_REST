@@ -4,7 +4,7 @@ const Spell = mongoose.model('spell', {
     name: String,
     level: Number,
     school: String,
-    description: String,
+    description: Array,
     castingTime: String,
     range: String,
     components: Array,
