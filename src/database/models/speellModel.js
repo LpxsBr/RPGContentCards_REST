@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+//ajuste no commit
 
 const Spell = mongoose.model("spell", {
   name: String,
@@ -11,8 +12,8 @@ const Spell = mongoose.model("spell", {
   damageResume: Array,
   damageType: String,
   components: Array,
-  duration: String,
   source: String,
+  duration: String,
 });
 
 export { Spell };
