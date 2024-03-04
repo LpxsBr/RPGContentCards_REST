@@ -40,4 +40,23 @@ export default new class SpellController {
             })
         }
     }
+    
+    async delete(req, res) {
+        try {
+            const { id } = req.params;
+
+            await Spell.deleteOne({ _id: id })
+
+            return res.status(200).json({
+                message: 'item deleted',
+                id
+            })
+
+        } catch (error) {
+            return res.status(500).json({
+                message: 'item was not create',
+                error
+            })
+        }
+    }
 }
