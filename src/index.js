@@ -24,10 +24,12 @@ app.use(customMiddleware)
 // spell
 app.post    ('/api/spell',      SpellController.create)
 app.get     ('/api/spell',      SpellController.getAll)
+app.delete  ('/api/item/:id',   SpellController.delete)
 
 // item
-app.post    ('/api/item',      ItemController.create)
-app.get     ('/api/item',      ItemController.getAll)
+app.post    ('/api/item',       ItemController.create)
+app.get     ('/api/item',       ItemController.getAll)
+app.delete  ('/api/item/:id',   ItemController.delete)
 
 
 app.get     ('/api/libera',     (req, res, next)=>res.status(201).json('liberado'))
