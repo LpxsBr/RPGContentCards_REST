@@ -47,6 +47,14 @@ body example
 GET : /api/spell
 ```
 
+### TO DELETE A SPELL
+
+```
+DELETE: /api/spell/[id]
+```
+
+---
+
 ---
 ### TO PUBLISH A ITEM
 
@@ -72,4 +80,11 @@ body example
 ```markdown
 GET : /api/item
 ```
+
+### TO DELETE AN ITEM
+
+```
+DELETE: /api/item/[id]
+```
+
 ---
